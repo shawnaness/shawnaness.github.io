@@ -13,7 +13,7 @@ h2 {
 
 #header {
   background-color: #CAB1F0;
-  padding: 80px;
+  padding: 60px;
   margin-bottom: 50px;
 }
 
@@ -22,11 +22,46 @@ h2 {
   text-shadow: 3px 3px 0 #7B4CC2;
 }
 
-#about {
+#about, #projects {
   margin-bottom: 50px;
 }
 
 #contact {
   background-color: #CAB1F0;
   padding: 10px;
+}
+
+#index {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+   background-color: #CAB1F0;
+   -webkit-box-shadow: 0 8px 6px -8px black;
+   -moz-box-shadow: 0 8px 6px -8px black;
+   box-shadow: 0 8px 6px -8px black;
+   z-index: 1;
+   position: relative;
+}
+
+li {
+   float: left;
+}
+
+li a {
+   display: block;
+   color: white;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+}
+
+li a:hover {
+   background-color: #fff;
+   color: #000;
+}
+
+.active {
+   background-color: white;
+   color: black;
 }
