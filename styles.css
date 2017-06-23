@@ -40,8 +40,13 @@ h2 {
    -webkit-box-shadow: 0 8px 6px -8px black;
    -moz-box-shadow: 0 8px 6px -8px black;
    box-shadow: 0 8px 6px -8px black;
-   z-index: 1;
    position: relative;
+   text-align: center;
+}
+
+h3 a {
+  color: teal;
+  text-decoration: none;
 }
 
 li {
