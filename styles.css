@@ -53,10 +53,10 @@ h3 a {
 
 li {
    float: left;
+   padding-top: 10px;
 }
 
 li a {
-   display: block;
    color: #008080;
    text-align: center;
    padding: 14px 16px;
