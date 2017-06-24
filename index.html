@@ -6,12 +6,17 @@
   <link href="https://fonts.googleapis.com/css?family=Raleway"
     rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
 
 <body>
-  <div id="index">
-    <li><a href="index.html" class="active">home</a></li>
-    <li><a href="projects.html">projects</a></li>
+  <div id="navigation">
+    <li><a href="#header" class="header"
+      onclick="changeIndexToHome()" style="color: black;">home</a></li>
+    <li><a href="#projects" class="projects"
+      onclick="changeIndexToProjects()">projects</a></li>
+    <li><a href="#contact" class="contact"
+      onclick="changeIndexToContacts()">contact</a></li>
   </div>
   <div id="header">
       <h1>Hi! I'm Shawna Huang.</h1>
@@ -37,17 +42,21 @@
     <h3><a href="http://github.com">Project 3</a></h3>
     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
         Aenean commodo ligula eget dolor. Aenean massa. </p>
+    <h3><a href="http://github.com">Project 4</a></h3>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+        Aenean commodo ligula eget dolor. Aenean massa. </p>
   </div>
   <div id="contact">
     <h2>Contact Me</h2>
-    <h3><a href="mailto: shawna_huang@brown.edu" target="_blank">email</a> me |
-      find me on <a href=https://www.linkedin.com/in/shawna-huang/
-      target="_blank">LinkedIn</a> |
-      view my projects on <a href=https://github.com/shawnaness
-      target="_blank">GitHub</a> |
-      view my
+    <h3>send me an
+      <a href="mailto: shawna_huang@brown.edu" target="_blank">email</a></h3>
+    <h3>find me on <a href=https://www.linkedin.com/in/shawna-huang/
+      target="_blank">LinkedIn</a></h3>
+    <h3>view my projects on <a href=https://github.com/shawnaness
+      target="_blank">GitHub</a></h3>
+    <h3>download my
       <a href="https://github.com/shawnaness/shawnaness.github.io/raw/master/Resume.pdf"
-      download>resume</a>
+      download>resume</a></h3>
     </h3>
   </div>
 </body>

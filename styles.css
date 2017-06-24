@@ -17,13 +17,18 @@ h2 {
   margin-bottom: 50px;
 }
 
-#header h1, #header h2 {
+#header h1, #header h2, #contact h2 {
   color: #ffffff;
   text-shadow: 3px 3px 0 #7B4CC2;
 }
 
-#about, #projects {
+#about {
+  margin-bottom: 30px;
+}
+
+#projects {
   margin-bottom: 50px;
+  padding-top: 20px;
 }
 
 #contact {
@@ -31,21 +36,18 @@ h2 {
   padding: 10px;
 }
 
-#index {
+#navigation {
    list-style-type: none;
    margin: 0;
    padding: 0;
    overflow: hidden;
-   background-color: #CAB1F0;
-   -webkit-box-shadow: 0 8px 6px -8px black;
-   -moz-box-shadow: 0 8px 6px -8px black;
-   box-shadow: 0 8px 6px -8px black;
-   position: relative;
+   background-color: none;
+   position: fixed;
    text-align: center;
 }
 
 h3 a {
-  color: teal;
+  color: #008080;
   text-decoration: none;
 }
 
@@ -55,18 +57,12 @@ li {
 
 li a {
    display: block;
-   color: white;
+   color: #008080;
    text-align: center;
    padding: 14px 16px;
    text-decoration: none;
 }
 
 li a:hover {
-   background-color: #fff;
    color: #000;
-}
-
-.active {
-   background-color: white;
-   color: black;
 }
