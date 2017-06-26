@@ -5,33 +5,47 @@
   <link rel="shortcut icon" type="image/png" href="/favicon.png">
   <link href="https://fonts.googleapis.com/css?family=Raleway"
     rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Homemade+Apple"
+    rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
+  <script src="ScrollTrigger.min.js"></script>
+  <script>
+  document.addEventListener('DOMContentLoaded', function(){
+  	var trigger = new ScrollTrigger();
+  });
+  </script>
 </head>
 
 <body>
   <div id="navigation">
     <li><a href="#header" class="header"
       onclick="changeIndexToHome()" style="color: black">home</a></li>
+    <li><a href="#about" class="about"
+      onclick="changeIndexToAbout()">about</a></li>
     <li><a href="#projects" class="projects"
       onclick="changeIndexToProjects()">projects</a></li>
     <li><a href="#contact" class="contact"
       onclick="changeIndexToContacts()">contact</a></li>
   </div>
-  <div id="header">
-      <h1>Hi! I'm Shawna Huang.</h1>
+  <div id="header" class="fullScreen" data-scroll="once">
+    <div id="hello">
+       <h1>shawna huang</h1>
+       <h2>welcome!</h2>
+       <h3><a href="#about" onclick="changeIndexToAbout()">continue ></a></h3>
+    </div>
   </div>
-  <div id="about">
+  <div id="about" data-scroll="once">
       <h2>About Me</h2>
       <div id="about_content">
-          <img src="image.jpg" width=408 height=616>
-          <p>Hi! I'm a sophomore studying computer science at Brown University.
+          <img src="image.jpg" class="circular" alt="Shawna Huang">
+          <p>Hi! I'm a Brown University sophomore studying computer science.
             I am a TA for the intro functional programming course, CSCI0170.
             I also play viola for the Brown University orchestra and swim
             with Brown University Club Swim.</p>
       </div>
   </div>
-  <div id="projects">
+  <div id="projects" data-scroll="once">
     <h2>Projects</h2>
     <h3><a href="http://github.com">Project 1</a></h3>
     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
@@ -46,7 +60,7 @@
     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
         Aenean commodo ligula eget dolor. Aenean massa. </p>
   </div>
-  <div id="contact">
+  <div id="contact" data-scroll="once">
     <h2>Contact Me</h2>
     <h3>send me an
       <a href="mailto: shawna_huang@brown.edu" target="_blank">email</a></h3>

@@ -1,29 +1,55 @@
 body {
   font-family: 'Raleway', sans-serif;
   text-align: center;
+  margin: 0%;
+  animation: fadein 2s;
 }
 
-h1 {
-  font-size: 42px;
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
 
 h2 {
+  font-family: 'Homemade Apple', 'Arial', cursive;
   font-size: 32px;
 }
 
-#header {
-  background-color: #CAB1F0;
-  padding: 60px;
-  margin-bottom: 50px;
+.fullScreen {
+  min-height: 100vh;
+  margin: 0;
 }
 
-#header h1, #header h2, #contact h2 {
+#header {
+  background: linear-gradient(to bottom right, #CAB1F0, #B1F0EA);
+  position: relative;
+}
+
+#hello {
+  font-family: 'Homemade Apple', cursive;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#hello h1 {
   color: #ffffff;
-  text-shadow: 3px 3px 0 #7B4CC2;
+  text-shadow: 3px 3px 0 #707070;
+  font-size: 350%;
 }
 
 #about {
-  margin-bottom: 30px;
+  margin: 30px 20px;
+}
+
+.circular {
+  width: 250px;
+	height: 250px;
+	border-radius: 125px;
+	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 }
 
 #projects {
@@ -32,18 +58,20 @@ h2 {
 }
 
 #contact {
-  background-color: #CAB1F0;
+  background: #F0B1B7;
   padding: 10px;
+}
+
+#contact h2 {
+    color: #ffffff;
+    text-shadow: 3px 3px 0 #E8747F;
 }
 
 #navigation {
    list-style-type: none;
-   margin: 0;
-   padding: 0;
    overflow: hidden;
-   background-color: none;
    position: fixed;
-   text-align: center;
+   vertical-align: middle;
 }
 
 h3 a {
@@ -65,4 +93,14 @@ li a {
 
 li a:hover {
    color: #000;
+}
+
+.invisible {
+	transition: opacity 1.0s ease;
+	opacity: 0.0;
+}
+
+.visible {
+	transition: opacity 1.0s ease;
+	opacity: 1.0;
 }
