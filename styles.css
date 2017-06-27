@@ -26,7 +26,7 @@ h2 {
 }
 
 #hello {
-  font-family: 'Homemade Apple', cursive;
+  font-family: 'Homemade Apple', 'Arial', cursive;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -41,6 +41,14 @@ h2 {
 
 #about {
   margin: 30px 20px;
+  padding-bottom: 20px;
+}
+
+#about li {
+  text-align: left;
+  list-style-type: square;
+  list-style-position: inside;
+  padding-left: 60px;
 }
 
 .circular {
@@ -56,7 +64,7 @@ h2 {
   margin-bottom: 50px;
   margin-left: 20px;
   margin-right: 20px;
-  padding-top: 20px;
+  padding-top: 10px;
 }
 
 #contact {
@@ -81,7 +89,7 @@ h3 a {
   text-decoration: none;
 }
 
-li {
+#navigation li {
    float: left;
    padding-top: 10px;
 }
