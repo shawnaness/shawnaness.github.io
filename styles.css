@@ -15,6 +15,11 @@ h2 {
   font-size: 32px;
 }
 
+h3 a {
+  color: #008080;
+  text-decoration: none;
+}
+
 .fullScreen {
   min-height: 100vh;
   margin: 0;
