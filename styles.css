@@ -80,11 +80,26 @@ h3 a {
 #contact {
   background: #F0B1B7;
   padding: 10px 0px 50px 0px;
+  color: #ffffff;
 }
 
 #contact h2 {
     color: #ffffff;
     text-shadow: 3px 3px 0 #E8747F;
+    margin-bottom: 0px;
+}
+
+#contact p {
+  color: #ffffff;
+}
+
+#contact a {
+  color: #B1F0EA;
+  text-decoration: none;
+}
+
+#contact a:hover {
+  color: #67DBD0;
 }
 
 .logo {
@@ -112,16 +127,16 @@ h3 a {
    padding-top: 10px;
 }
 
-li a {
+#navigation li a {
    color: #008080;
    text-align: center;
    padding: 14px 16px;
    text-decoration: none;
 }
 
-/* not working? */
-li a:hover {
-   color: black;
+/* better solution? */
+#navigation li a:hover {
+   color: black !important;
 }
 
 .invisible {
