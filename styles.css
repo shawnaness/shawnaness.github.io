@@ -16,8 +16,12 @@ h2 {
 }
 
 h3 a {
-  color: #008080;
+  color: #4da3ff;
   text-decoration: none;
+}
+
+h3 a:hover {
+  color: #B1F0EA;
 }
 
 .fullScreen {
@@ -26,7 +30,7 @@ h3 a {
 }
 
 #header {
-  background: linear-gradient(to bottom right, #CAB1F0, #B1F0EA);
+  background: linear-gradient(to bottom right, #3698ff, #B1F0EA);
   position: relative;
 }
 
@@ -40,7 +44,7 @@ h3 a {
 
 #hello h1 {
   color: #ffffff;
-  text-shadow: 3px 3px 0 #707070;
+  text-shadow: 3px 3px 0 #006adc;
   font-size: 350%;
 }
 
@@ -61,6 +65,7 @@ h3 a {
 }
 
 .circular {
+  margin-top: -30px;
   width: 250px;
 	height: 250px;
 	border-radius: 125px;
@@ -78,19 +83,20 @@ h3 a {
 }
 
 #contact {
-  background: #F0B1B7;
+  background: #83bfff;
   padding: 10px 0px 50px 0px;
   color: #ffffff;
 }
 
 #contact h2 {
     color: #ffffff;
-    text-shadow: 3px 3px 0 #E8747F;
+    text-shadow: 3px 3px 0 #618dbd;
     margin-bottom: 0px;
 }
 
 #contact p {
   color: #ffffff;
+  padding: 0 50px;
 }
 
 #contact a {
@@ -99,7 +105,7 @@ h3 a {
 }
 
 #contact a:hover {
-  color: #67DBD0;
+  color: #4da3ff;
 }
 
 .logo {
@@ -128,7 +134,7 @@ h3 a {
 }
 
 #navigation li a {
-   color: #008080;
+   color: #4da3ff;
    text-align: center;
    padding: 14px 16px;
    text-decoration: none;
@@ -137,6 +143,34 @@ h3 a {
 /* better solution? */
 #navigation li a:hover {
    color: black !important;
+}
+
+@media (max-width: 800px) {
+  body {
+    display: table;
+  }
+
+  #hello h1 {
+    font-size: 12vw;
+    line-height: 20vw;
+  }
+
+  h2 {
+    font-size: 8vw;
+  }
+
+  h3 a {
+    font-size: 6vw;
+  }
+
+  p {
+    font-size: 4vw;
+  }
+
+  #navigation {
+    font-size: 5vw;
+  }
+
 }
 
 .invisible {
