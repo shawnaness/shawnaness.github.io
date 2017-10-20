@@ -30,8 +30,7 @@ h3 a:hover {
 }
 
 #header {
-  /*b1f0ea*/
-  background: linear-gradient(to bottom right, #3698ff, #adf1ea);
+  background: linear-gradient(to bottom right, #3698ff, #B1F0EA);
   position: relative;
 }
 
@@ -149,13 +148,13 @@ h3 a:hover {
    color: black !important;
 }
 
-@media (max-width: 60px) {
+@media (max-width: 600px) {
   body {
     display: table;
   }
 
   #hello h1 {
-    font-size: 12vw;
+    font-size: 13vw;
     line-height: 20vw;
   }
 
