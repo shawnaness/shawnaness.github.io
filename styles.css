@@ -11,23 +11,13 @@ body {
 }
 
 h2 {
-  font-family: "Homemade Apple", sans-serif;
-  font-size: 2em;
+  font-family: 'Homemade Apple', 'Arial', cursive;
+  font-size: 32px;
 }
 
-/*@-webkit-keyframes pulse
-{
-0% {color: #4da3ff;}
-50% {color: #0063cd;}
-100% {color: #4da3ff;}
-}*/
-
 h3 a {
-  font-weight: bold;
   color: #4da3ff;
   text-decoration: none;
-  font-size: 1em;
-  /*-webkit-animation: pulse 1.5s infinite;*/*/
 }
 
 h3 a:hover {
