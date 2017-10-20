@@ -122,6 +122,8 @@ h3 a:hover {
 }
 
 #navigation {
+   width: 100vw;
+   text-align: center;
    list-style-type: none;
    overflow: hidden;
    position: fixed;
@@ -129,7 +131,8 @@ h3 a:hover {
 }
 
 #navigation li {
-   float: left;
+  text-align: center;
+  display: inline-block;
    padding-top: 10px;
 }
 
@@ -167,8 +170,12 @@ h3 a:hover {
     font-size: 4vw;
   }
 
+  li {
+    font-size: 4vw;
+  }
+
   #navigation {
-    font-size: 5vw;
+    font-size: 4vw;
   }
 
 }
