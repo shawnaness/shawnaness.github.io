@@ -15,13 +15,17 @@ h2 {
   font-size: 32px;
 }
 
+@keyframes pulse {
+  0% {color: #0065d2;}
+  50% {color: #4da3ff;}
+  100% {color: #0065d2;}
+}
+
 h3 a {
   color: #4da3ff;
   text-decoration: none;
-}
-
-h3 a:hover {
-  color: #B1F0EA;
+  animation: pulse 1.5s infinite;
+  font-size: 120%;
 }
 
 .fullScreen {
