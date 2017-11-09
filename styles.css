@@ -21,7 +21,7 @@ h2 {
   100% {color: #0065d2;}
 }
 
-h3 a {
+#header h3 a {
   color: #4da3ff;
   text-decoration: none;
   animation: pulse 1.5s infinite;
@@ -85,6 +85,22 @@ h3 a {
   width: 70%;
   padding-top: 10px;
 }
+
+#projects h3 a {
+  color: #4da3ff;
+  text-decoration: none;
+  font-size: 120%;
+}
+
+#projects p a {
+  color: #4da3ff;
+  text-decoration: none;
+}
+
+#projects a:hover {
+  color: #B1F0EA;
+}
+
 
 #contact {
   background: #83bfff;
