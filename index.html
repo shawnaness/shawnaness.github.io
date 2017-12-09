@@ -2,14 +2,17 @@
 <html>
 <head>
   <title>Shawna Huang</title>
-  <link rel="shortcut icon" type="image/png" href="/favicon.png">
-  <link href="https://fonts.googleapis.com/css?family=Raleway"
+  <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+  <link href="https://fonts.googleapis.com/css?family=Raleway|Homemade+Apple|Quicksand"
     rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Homemade+Apple"
-    rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
   <script src="script.js" defer></script>
   <script src="ScrollTrigger.min.js"></script>
+  <script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+<script src="semantic/dist/semantic.min.js"></script>
   <script>
   document.addEventListener('DOMContentLoaded', function(){
   	var trigger = new ScrollTrigger();
@@ -18,98 +21,132 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<body>
-  <div id="navigation">
-    <li><a href="#header" class="header" onclick="changeIndexToHeader()"
-      style="color: black">home</a></li>
-    <li><a href="#about" class="about"
-      onclick="changeIndexToAbout()">about</a></li>
-    <li><a href="#projects" class="projects"
-      onclick="changeIndexToProjects()">projects</a></li>
-    <li><a href="#contact" class="contact"
-      onclick="changeIndexToContact()">contact</a></li>
-  </div>
-  <div id="header" class="fullScreen" data-scroll="once">
-    <div id="hello">
-       <h1>shawna huang</h1>
-       <h2>hello!</h2>
-       <h3><a href="#about" onclick="changeIndexToAbout()">&#9586;&#9585;</a></h3>
+<body class="pushable">
+<div class="ui vertical inverted sidebar menu left">
+  <a class="active item">Home</a>
+  <a class="item" href="projects.html">
+    Projects</a>
+    <div class="menu">
+      <a class="item" href="marvel.html">Marvel Madness</a>
+      <a class="item" href="ab-testing.html">A/B Testing</a>
+      <a class="item" href="responsive-redesign.html">Responsive Redesign</a>
+      <a class="item" href="wheather.html">Wheather</a>
+    </div>
+</div>
+<div class="pusher">
+  <div class="ui inverted vertical masthead center aligned segment" id="header">
+    <div class="ui container">
+      <div class="ui large secondary inverted pointing menu">
+        <a class="ui toc item mobile only tablet only grid">
+          <i class="sidebar icon"></i>
+        </a>
+        <a class="ui computer only active item grid">Home</a>
+        <div class="ui dropdown">
+          <a class="ui computer only item grid" href="projects.html">Projects</a>
+          <div class="menu">
+            <a class="item" href="marvel.html">Marvel Madness</a>
+            <a class="item" href="ab-testing.html">A/B Testing</a>
+            <a class="item" href="responsive-redesign.html">Responsive Redesign</a>
+            <a class="item" href="wheather.html">Wheather</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ui text container">
+      <h1 class="ui huge inverted header">Shawna Huang</h1>
+      <h2>Hello!</h2>
     </div>
   </div>
-  <div id="about" data-scroll="once">
-      <h2>About Me</h2>
-      <img src="image.jpg" class="circular" alt="Shawna Huang">
-      <p>Hi! I'm a Brown University sophomore studying computer science.
-        I'm an aspiring software engineer with a passion for Chinese food,
-         movie scores, and jump rope.</p>
-      <p>This summer, I worked at Zhejiang University in Hangzhou, China,
-        teaching American English and culture to high school students preparing
-        to study in the United States.</p>
-        <h3>I AM:</h3>
-          <li>an undergraduate teaching assistant for Computer Science:
-            An Integrated Introduction (CSCI0170)</li>
-          <li>a member of Brown Space Engineering's ground software team,
-            working on a mission control web app</li>
-          <li>a Meiklejohn peer advisor for first-year Brown students</li>
-          <li>the Brown University Club Swim women's 200yd breaststroke
-            record holder</li>
-          <li>a volunteer campus tour guide and info session leader</li>
-          <li>an avid pianist, violist, and crocheter</li>
-          <li>a proud Michigander</li>
-          <li>a co-founder of the first competitive jump rope team at Brown!</li>
-  </div>
-  <hr width=85%>
-  <div id="projects" data-scroll="once">
-    <h2>Projects</h2>
-    <h3><a href=https://github.com/BrownSpaceEngineering/mission-control/tree/twitter2 target="_blank">
-      Mission Control</a></h3>
-    <p>A web application to track and display data from EQUiSat, Brown Space
-        Engineering's nanosatellite, to be launched from the International
-        Space Station in March 2018.</p>
-    <h3><a href=https://shawnaness.github.io/marvel target="_blank">
-      Marvel Madness</a></h3>
-    <p>An interactive webpage to help you keep your Marvel Cinematic Universe straight.
-        Uses React.js to allow live filtering, searching, and sorting of all 17 Marvel
-        movies by superhero, phase, box office earnings, and more.
-    <h3><a href=https://github.com/shawnaness/responsive-redesign target="_blank">
-      Responsive Redesign – Josiah</a></h3>
-    <p>A redesign of Josiah, Brown University's course catalog, to improve usability and 
-      visual design, as well as to make it responsive to different screen sizes. Read more
-      <a href=https://shawnaness.github.io/responsive-redesign/Shawna%20Huang%20Responsive%20Redesign.pdf
-      target="_blank">here</a> and view the redesigned interface
-      <a href=https://shawnaness.github.io/responsive-redesign target="_blank">
-        here</a>.</p>
-    <h3><a href=https://github.com/shawnaness/a-b-testing-portfolio target="_blank">
-      A/B Testing and Eye Tracking</a></h3>
-    <p>Performed an A/B Test and Eye Tracking test on two designs of a mockup website, 
-      collecting and analyzing user interaction data from the two tests. Read more
-      <a href=https://shawnaness.github.io/a-b-testing-portfolio/AB%20Testing.pdf
-      target="_blank">here</a> and view the webpages
-      <a href=https://stark-journey-12954.herokuapp.com target="_blank">here</a>.</p>
-    <h3><a href=https://github.com/shawnaness/pawsitivity target="_blank">
-      Pawsitivity</a></h3>
-    <p>A web application designed to send anonymous email compliments, using the
-      Microsoft Sentiment Analysis API to filter out negative messages and
-      help spread positivity in the world. Created during hack@brown 2017.</p>
-
-  </div>
-  <div id="contact" data-scroll="once">
-    <h2>Contact Me</h2>
-    <p>view my
-      <a href=https://shawnaness.github.io/Resume.pdf target="_blank">resume</a>,
-       or find me on one of the platforms below:</p>
-    <div id="contact_logos">
-      <a href="mailto: shawna_huang@brown.edu" target="_blank">
-        <img src="mail.png" class="logo" alt="email me"></a>
-      <a href=https://www.facebook.com/shawna.huang1998 target="_blank">
-        <img src="facebook.png" class="logo" alt="Facebook"></a>
-      <a href=https://www.instagram.com/shawnaness target="_blank">
-        <img src="instagram.png" class="logo" alt="Instagram"></a>
-      <a href=https://github.com/shawnaness target="_blank">
-        <img src="github.png" class="logo" alt="GitHub"></a>
-      <a href=https://www.linkedin.com/in/shawna-huang/  target="_blank">
-        <img src="linkedin.png" class="logo" alt="LinkedIn"></a>
+  <div class="ui middle aligned vertically divided vertically padded grid container">
+    <div class="row" id="about">
+      <div class="column">
+        <h2 class="ui header">About Me</h2>
+        <div class="ui horizontally padded stackable mobile reversed grid">
+          <div class="ten wide column">
+            <p>Hi! I'm a Brown University sophomore studying computer science.
+              I'm an aspiring software engineer with an interest in front-end
+              development and UI/UX.</p>
+            <p>This summer, I worked at Zhejiang University in Hangzhou, China,
+              teaching American English and culture to high school students preparing
+              to study in the United States.</p>
+            <h3>I am:</h3>
+            <ul class="ui list">
+              <li>an undergraduate teaching assistant for Computer Science:
+                An Integrated Introduction (CSCI0170)</li>
+              <li>a member of Brown Space Engineering's ground software team,
+                working on a <a href=https://github.com/BrownSpaceEngineering/mission-control/tree/twitter2 target="_blank">
+                mission control web app</a></li>
+              <li>a Meiklejohn peer advisor for first-year Brown students</li>
+              <li>the Brown University Club Swim women's 200yd breaststroke
+                record holder</li>
+              <li>a volunteer campus tour guide and info session leader</li>
+              <li>an avid pianist, violist, and crocheter</li>
+              <li>a proud Michigander</li>
+              <li>co-founder of the first competitive jump rope team at Brown!</li>
+            </ul>
+            <div class="ui center aligned container">
+              <a href=https://shawnaness.github.io/Resume.pdf target="_blank">
+                <button class="ui inverted violet button">
+                View My Resume</button></a>
+            </div>
+          </div>
+          <div class="six wide column">
+            <img class="ui centered medium bordered circular image" src="/images/profile.jpg" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <h2 class="ui header">Skills</h2>
+        <div class="ui horizontally padded grid">
+          <div class="column">
+            <div class="ui small violet progress" id="python">
+                <div class="bar"></div>
+                <div class="label">Python</div>
+            </div>
+            <div class="ui small violet progress" id="java">
+                <div class="bar"></div>
+                <div class="label">Java</div>
+            </div>
+            <div class="ui small violet progress" id="c">
+                <div class="bar"></div>
+                <div class="label">C</div>
+            </div>
+            <div class="ui small violet progress" id="htmlcss">
+                <div class="bar"></div>
+                <div class="label">HTML/CSS</div>
+            </div>
+            <div class="ui small violet progress" id="react">
+                <div class="bar"></div>
+                <div class="label">React</div>
+            </div>
+            <p>I've also worked in Scala, Racket, OCaml, MATLAB, and more.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <div class="ui right aligned container">
+          <a href="mailto: shawna_huang@brown.edu" target="_blank">
+            <i class="mail large violet icon"></i>
+          </a>
+          <a href=https://www.facebook.com/shawna.huang1998 target="_blank">
+            <i class="facebook f large violet icon"></i>
+          </a>
+          <a href=https://www.instagram.com/shawnaness target="_blank">
+            <i class="instagram large violet icon"></i>
+          </a>
+          <a href=https://github.com/shawnaness target="_blank">
+            <i class="github large violet icon"></i>
+          </a>
+          <a href=https://www.linkedin.com/in/shawna-huang/  target="_blank">
+            <i class="linkedin large violet icon"></i>
+          </a>
+        </div>
+      </div>
     </div>
   </div>
+</div>
 </body>
-</html>

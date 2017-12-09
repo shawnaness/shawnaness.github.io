@@ -71,11 +71,11 @@ h2 {
 .circular {
   margin-top: -30px;
   width: 250px;
-	height: 250px;
-	border-radius: 125px;
-	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+  height: 250px;
+  border-radius: 125px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+  -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 }
 
 #projects {
@@ -206,11 +206,11 @@ h2 {
   .circular {
     margin-top: -20px;
     width: 30vh;
-  	height: 30vh;
-  	border-radius: 125px;
-  	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-  	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-  	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    height: 30vh;
+    border-radius: 125px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
   }
 
   #navigation {
@@ -224,11 +224,11 @@ h2 {
 }
 
 .invisible {
-	transition: opacity 1.0s ease;
-	opacity: 0.0;
+  transition: opacity 1.0s ease;
+  opacity: 0.0;
 }
 
 .visible {
-	transition: opacity 1.0s ease;
-	opacity: 1.0;
+  transition: opacity 1.0s ease;
+  opacity: 1.0;
 }

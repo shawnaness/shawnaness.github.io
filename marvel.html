@@ -1,0 +1,259 @@
+<!doctype html>
+<html>
+<head>
+  <title>Shawna Huang</title>
+  <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+  <link href="https://fonts.googleapis.com/css?family=Raleway|Homemade+Apple|Quicksand"
+    rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+  <script src="script.js" defer></script>
+  <script src="ScrollTrigger.min.js"></script>
+  <script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+<script src="semantic/dist/semantic.min.js"></script>
+  <script>
+  document.addEventListener('DOMContentLoaded', function(){
+  	var trigger = new ScrollTrigger();
+  });
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body class="pushable">
+<div class="ui vertical inverted sidebar menu left">
+  <a class="item" href="index.html">Home</a>
+  <a class="item" href="projects.html">Projects</a>
+    <div class="menu">
+      <a class="active item">Marvel Madness</a>
+      <a class="item" href="ab-testing.html">A/B Testing</a>
+      <a class="item" href="responsive-redesign.html">Responsive Redesign</a>
+      <a class="item" href="wheather.html">Wheather</a>
+    </div>
+</div>
+<div class="pusher">
+  <div class="ui inverted vertical masthead center aligned segment" id="header">
+    <div class="ui container">
+      <div class="ui large secondary inverted pointing menu">
+        <a class="ui toc item mobile only tablet only grid">
+          <i class="sidebar icon"></i>
+        </a>
+        <a class="ui computer only item grid" href="index.html">Home</a>
+        <div class="ui dropdown">
+          <a class="ui computer only item active grid" href="projects.html">Projects</a>
+          <div class="menu">
+            <a class="active item">Marvel Madness</a>
+            <a class="item" href="ab-testing.html">A/B Testing</a>
+            <a class="item" href="responsive-redesign.html">Responsive Redesign</a>
+            <a class="item" href="wheather.html">Wheather</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ui text container">
+      <h1 class="ui huge inverted header">Shawna Huang</h1>
+      <h2>Hello!</h2>
+    </div>
+  </div>
+  <div class="ui middle aligned vertically divided vertically padded grid container">
+    <div class="column row">
+      <div class="column">
+        <div class="ui breadcrumb">
+          <a class="section" href="projects.html">Projects</a>
+          <i class="right angle icon divider"></i>
+          <div class="active section">Marvel Madness</div>
+        </div>
+        <h1 class="ui header">Marvel Madness</h1>
+        <p>Marvel Madness is an interactive web page designed for searching, sorting,
+          and filtering the 17 movies in the Marvel Cinematic Universe.</p>
+        <div class="ui center aligned container">
+          <a href=https://shawnaness.github.io/marvel target="_blank">
+            <button class="ui inverted violet button">View Page
+          </button></a>
+        </div>
+        </div>
+    </div>
+    <div class="two column stackable row">
+      <div class="column">
+        <img class="ui fluid bordered image" src="images/marvel-1.png" />
+      </div>
+      <div class="column">
+        <div class="ui center aligned container">
+          <i class="violet large idea icon"></i>
+        </div>
+        <p>This project began as the Development assignment for CSCI 1300: User
+        Interfaces and User Experiences. The task was to use React.js to build a
+        live filtering and sorting page for any content of our choosing.</p>
+        <p>As a huge Marvel fan, I thought this was the perfect opportunity to build
+        something to help me keep my Marvel facts straight. With 17 movies and counting,
+        it's becoming increasingly more difficult to keep track of the timeline
+        and characters. This project aims to provide a simple and interactive
+        solution to this problem.</p>
+      </div>
+    </div>
+    <div class="two column stackable row">
+      <div class="ui stackable middle aligned horizontally padded vertically padded mobile reversed grid">
+        <div class="eight wide column">
+          <div class="ui center aligned container">
+            <i class="violet large code icon"></i>
+          </div>
+          <p>Marvel Madness was coded entirely in React.js. I took advantage
+          of React Components to create a page that was modular in its design.
+          Each movie card is its own React Component, as is the entire list
+          which displays them.</p>
+          <p>All of the data about each movie is hard coded in as a json file.</p>
+          <div class="ui center aligned container">
+            <a href=https://github.com/shawnaness/marvel target="_blank">
+              <button class="ui inverted violet button">Github Repository
+            </button></a>
+          </div>
+        </div>
+          <div class="eight wide column">
+            <img class="ui small centered image" src="images/react.png" />
+          </div>
+        </div>
+      </div>
+      <div class="two column stackable row">
+        <div class="column">
+          <img class="ui fluid bordered image" src="images/marvel-2.png" />
+        </div>
+        <div class="column">
+          <div class="ui center aligned container">
+            <i class="violet large paint brush icon"></i>
+          </div>
+          <p>Here you can see a previous iteration of the design. I originally had a
+          very large header that took up a lot of real estate on the screen, as well as
+          only one movie card per row. This led to poor usability for several reasons.
+          Users not only have to scroll to see more content, but they also have to
+          scroll simply to even see the options available to them.</p>
+          <p>To fix this, I used CSS flexbox to allow two movie cards per row,
+          allowing users to see more content at one time. I chose to keep the options
+          bar on the side of the screen because I thought this was the most visually
+          appealing layout; however, I did reduce the size of the header by removing
+          the superfluous description, which wasn't really adding to the usability
+          of the page.</p>
+        </div>
+      </div>
+      <div class="two column stackable row">
+        <div class="ui stackable middle aligned horizontally padded vertically padded mobile reversed grid">
+          <div class="eight wide column">
+            <div class="ui center aligned container">
+              <i class="violet large options icon"></i>
+            </div>
+            <p>By far the most difficult design challenge was the layout of the
+            options bar. I decided quite early on that I wanted to use superhero logos
+            as the "checkboxes" for selecting movies containing a given superhero, rather
+            than simple checkboxes or dropdowns. However, this led to an interesting
+            problem, as the layout of these must be carefully considered.</p>
+            <p>I decided to place these logos to the side of the main content of the
+            page, rather than at the top. The superhero logos looked best when in
+            a 3x3 grid or stacked vertically rather than spread horizontally. This meant
+            sacrificing some usability for visual design, since users now have to scroll
+            in order to view all of the filtering options available to them. However,
+            I believe this trade-off is well worth it, as this superhero logo grid
+            helps create a comic book aesthetic for the entire page.</p>
+          </div>
+          <div class="eight wide column">
+            <img class="ui small centered image" src="images/marvel-3.png" />
+          </div>
+          </div>
+      </div>
+      <div class="one column row">
+        <div class="column">
+          <div class="ui center aligned container">
+            <i class="violet large checkmark icon"></i>
+          </div>
+          <p>This project was incredibly rewarding. I gained a lot of experience
+          with React.js, and I loved getting to build something related to the
+          superhero movies that I love. It was also interesting for me to consider
+          the visual design and usability tradeoffs due to my design decisions.
+          I plan to continue improving this project, considering ways to improve
+          the usability of the options bar and adding movies as Marvel continues
+          to churn them out.</p>
+        </div>
+      </div>
+
+    <div class="row" id="projects">
+      <div class="column">
+        <h2 class="ui header"> More Projects</h2>
+          <div class="ui stackable grid">
+            <div class="four wide center aligned column">
+              <a href="marvel.html">
+              <div class="ui small image">
+                  <div class="ui dimmer">
+                    <div class="content">
+                      <div class="center">
+                        <h2 class="ui inverted header">Marvel Madness</h2>
+                      </div>
+                    </div>
+                  </div>
+                  <img class="ui bordered centered image" src="images/marvel.png">
+              </div></a>
+            </div>
+            <div class="four wide center aligned column">
+              <a href="ab-testing.html">
+              <div class="ui small image">
+                  <div class="ui dimmer">
+                    <div class="content">
+                      <div class="center">
+                        <h2 class="ui inverted header">A/B Testing</h2>
+                      </div>
+                    </div>
+                  </div>
+                  <img class="ui bordered centered image" src="images/ab-testing.png">
+              </div></a>
+            </div>
+            <div class="four wide center aligned column">
+              <a href="responsive-redesign.html">
+              <div class="ui small image">
+                  <div class="ui dimmer">
+                    <div class="content">
+                      <div class="center">
+                        <h2 class="ui inverted header">Responsive Redesign</h2>
+                      </div>
+                    </div>
+                  </div>
+                  <img class="ui bordered centered image" src="images/responsive-redesign.png">
+              </div></a>
+            </div>
+            <div class="four wide center aligned column">
+              <a href="wheather.html">
+              <div class="ui small image">
+                  <div class="ui dimmer">
+                    <div class="content">
+                      <div class="center">
+                        <h2 class="ui inverted header">Wheather</h2>
+                      </div>
+                    </div>
+                  </div>
+                  <img class="ui bordered centered image" src="images/wheather.png">
+              </div></a>
+            </div>
+          </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <div class="ui right aligned container">
+          <a href="mailto: shawna_huang@brown.edu" target="_blank">
+            <i class="mail large violet icon"></i>
+          </a>
+          <a href=https://www.facebook.com/shawna.huang1998 target="_blank">
+            <i class="facebook f large violet icon"></i>
+          </a>
+          <a href=https://www.instagram.com/shawnaness target="_blank">
+            <i class="instagram large violet icon"></i>
+          </a>
+          <a href=https://github.com/shawnaness target="_blank">
+            <i class="github large violet icon"></i>
+          </a>
+          <a href=https://www.linkedin.com/in/shawna-huang/  target="_blank">
+            <i class="linkedin large violet icon"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>

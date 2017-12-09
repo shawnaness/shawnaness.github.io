@@ -37,38 +37,44 @@ function doScrolling(element, duration) {
   })
 }
 
-function changeIndexToHeader() {
-  for (i = 0; i < indexArray.length; i++) {
-    indexArray[i].style.color = "#4da3ff";
-  }
-  document.querySelector("li a.header").style.color = "black";
-  doScrolling('#header', 1500);
-  event.preventDefault();
-}
-
 function changeIndexToAbout() {
-  for (i = 0; i < indexArray.length; i++) {
-    indexArray[i].style.color = "#4da3ff";
-  }
-  document.querySelector("li a.about").style.color = "black";
   doScrolling('#about', 1500);
   event.preventDefault();
 }
 
 function changeIndexToProjects() {
-  for (i = 0; i < indexArray.length; i++) {
-    indexArray[i].style.color = "#4da3ff";
-  }
-  document.querySelector("li a.projects").style.color = "black";
   doScrolling('#projects', 1500);
   event.preventDefault();
 }
 
-function changeIndexToContact() {
-  for (i = 0; i < indexArray.length; i++) {
-    indexArray[i].style.color = "#4da3ff";
-  }
-  document.querySelector("li a.contact").style.color = "black";
-  doScrolling('#contact', 1500);
-  event.preventDefault();
-}
+$('#python').progress({
+  percent: 70
+});
+
+$('#java').progress({
+  percent: 85
+});
+
+$('#c').progress({
+  percent: 85
+});
+
+$('#htmlcss').progress({
+  percent: 90
+});
+
+$('#react').progress({
+  percent: 60
+});
+
+$('.image')
+  .dimmer({
+    on: 'hover'
+  })
+;
+
+$('.ui.sidebar')
+  .sidebar('attach events', '.toc.item')
+;
+
+$('.dropdown').dropdown({on: 'hover' });
