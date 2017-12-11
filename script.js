@@ -48,7 +48,7 @@ function changeIndexToProjects() {
 }
 
 $('#python').progress({
-  percent: 70
+  percent: 75
 });
 
 $('#java').progress({
@@ -56,15 +56,15 @@ $('#java').progress({
 });
 
 $('#c').progress({
-  percent: 85
+  percent: 90
 });
 
 $('#htmlcss').progress({
   percent: 90
 });
 
-$('#react').progress({
-  percent: 60
+$('#javascript').progress({
+  percent: 65
 });
 
 $('.image')
