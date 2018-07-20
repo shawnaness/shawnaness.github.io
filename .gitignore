@@ -1,2 +1,1 @@
-node_modules/balanced-match/README.md
-node_modules/brace-expansion/README.md
+node_modules/*/README.md
