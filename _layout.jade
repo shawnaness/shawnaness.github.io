@@ -1,0 +1,25 @@
+doctype
+html
+  head
+    link(rel="stylesheet" href="/main.css")
+    link(rel="shortcut icon" type="image/png" href="images/favicon.png")
+    title Shawna Huang
+  body
+    .main
+      != yield
+      .push
+    .footer
+      .header-line
+        .copyright &copy; 2019 Shawna Huang
+        .right
+          a(href="mailto:shawna_huang@brown.edu" target="_blank") 
+            img.footer-icon(src="/images/footer/mail.png")
+          a(href="https://facebook.com/shawna.huang1998" target="_blank")
+            img.footer-icon(src="/images/footer/facebook.png")
+          a(href="https://instagram.com/shawnaness" target="_blank")
+            img.footer-icon(src="/images/footer/instagram.png")
+          a(href="https://github.com/shawnaness"  target="_blank")
+            img.footer-icon(src="/images/footer/github.png")
+          a(href="https://linkedin.com/in/shawna-huang" target="_blank")
+            img.footer-icon(src="/images/footer/linkedin.png")
+ 
